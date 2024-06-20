@@ -58,3 +58,5 @@ pipeline:
             description: ""
             required: true
             value: "1"
+        delegateSelectors:
+          - docker-delegate
