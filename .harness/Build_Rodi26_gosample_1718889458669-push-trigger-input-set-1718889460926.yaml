@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Rodi26_gosample_1718889458669-push-trigger-input-set
+  identifier: Build_Rodi26_gosample_1718889458669pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: First_Go_Project
+  pipeline:
+    identifier: Build_Rodi26_gosample_1718889458669
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
