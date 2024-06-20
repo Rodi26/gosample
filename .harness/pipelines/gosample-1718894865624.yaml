@@ -57,4 +57,4 @@ pipeline:
             type: String
             description: ""
             required: true
-            value: "1"
+            value: "0"
