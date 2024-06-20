@@ -46,9 +46,15 @@ pipeline:
                   timeout: ""
                   type: Run
           platform:
-            arch: Arm64
             os: MacOS
+            arch: Arm64
           runtime:
-            spec: {}
             type: Docker
+            spec: {}
         type: CI
+        variables:
+          - name: GIT_DISCOVERY_ACROSS_FILESYSTEM
+            type: String
+            description: ""
+            required: true
+            value: "1"
