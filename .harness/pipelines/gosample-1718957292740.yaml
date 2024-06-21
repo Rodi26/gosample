@@ -53,4 +53,4 @@ pipeline:
             spec: {}
         type: CI
         delegateSelectors:
-          - docker-delegate
+          - docker-delegate-custom
