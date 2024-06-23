@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Rodi26_gosample_1719132221771-pr-trigger-input-set
+  identifier: Build_Rodi26_gosample_1719132221771prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_Rodi26_gosample_1719132221771
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
