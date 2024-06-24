@@ -16,6 +16,8 @@ pipeline:
         spec:
           caching:
             enabled: true
+            paths:
+              - /home/harness/node_modules
           cloneCodebase: true
           execution:
             steps:
