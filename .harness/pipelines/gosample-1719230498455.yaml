@@ -54,4 +54,4 @@ pipeline:
             spec: {}
         type: CI
         delegateSelectors:
-          - helm-delegate-macos
+          - docker-delegate
