@@ -17,7 +17,7 @@ pipeline:
           caching:
             enabled: true
             paths:
-              - /home/harness/node_modules
+              - /home/harness/.root
           cloneCodebase: true
           execution:
             steps:
