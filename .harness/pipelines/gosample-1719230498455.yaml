@@ -29,8 +29,15 @@ pipeline:
                     command: |-
                       echo "Welcome to Harness CI"
                       go build
-                      go test
                   timeout: ""
+              - step:
+                  type: Run
+                  identifier: test
+                  name: Test
+                  spec:
+                    connectorRef: account.harnessImage
+                    image: golang:latest
+                    command: go test
           platform:
             os: MacOS
             arch: Arm64
