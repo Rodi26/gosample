@@ -15,9 +15,7 @@ pipeline:
         name: build
         spec:
           caching:
-            enabled: false
-            paths:
-              - /home/harness/.root
+            enabled: true
           cloneCodebase: true
           execution:
             steps:
@@ -26,6 +24,8 @@ pipeline:
                   identifier: build_go_app
                   name: Build Go App
                   spec:
+                    connectorRef: account.harnessImage
+                    image: golang:latest
                     command: |-
                       echo "Welcome to Harness CI"
                       go build
